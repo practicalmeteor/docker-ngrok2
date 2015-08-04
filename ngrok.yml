@@ -1,0 +1,5 @@
+authtoken: 4y6MR65Dttg7tzohAfD3X_6yW5iHzo9H4WRVQxwFYEJ
+tunnels:
+  test:
+    proto: http
+    addr: 80
