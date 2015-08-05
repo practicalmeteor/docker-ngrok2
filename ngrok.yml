@@ -1,5 +1,7 @@
-authtoken: 4y6MR65Dttg7tzohAfD3X_6yW5iHzo9H4WRVQxwFYEJ
+authtoken: yourAuthToken
 tunnels:
-  test:
-    proto: http
-    addr: 80
+ meteor:
+   proto: http
+   addr: 3000
+   bind_tls: true
+   subdomain: yourSubDomain

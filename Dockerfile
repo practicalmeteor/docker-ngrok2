@@ -1,4 +1,4 @@
-FROM phusion/baseimage
+FROM phusion/baseimage:0.9.17
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
@@ -19,8 +19,6 @@ RUN groupadd -r ngrok && useradd -rm -g ngrok ngrok
 WORKDIR /home/ngrok
 
 ADD ngrok.yml /home/ngrok/.ngrok2/
-
-EXPOSE 4040
 
 
 # Clean up APT when done.

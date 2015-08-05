@@ -1,5 +1,5 @@
 #!/bin/sh
 
-exec /sbin/setuser ngrok ngrok start --all
+/sbin/setuser ngrok ngrok start --all
 
 
