@@ -1,7 +1,7 @@
-authtoken: yourAuthToken
+authtoken: 7x59u2KM5LUENafmYPWkj_2gm2vBukRuVwbF3jXbcpG
 tunnels:
- meteor:
-   proto: http
-   addr: 3000
-   bind_tls: true
-   subdomain: yourSubDomain
+  meteor:
+    proto: http
+    addr: 3000
+    bind_tls: true
+    subdomain: ronen

@@ -9,4 +9,4 @@ else
 fi
 
 # Build docker container image
-docker build -t practicalmeteor/ngrok2 .
+sudo docker build -t practicalmeteor/ngrok2 .
