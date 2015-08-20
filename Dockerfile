@@ -11,15 +11,13 @@ RUN unzip -o ngrok.zip -d /bin && false || rm -f ngrok.zip
 
 RUN mkdir /etc/service/ngrok
 
-# TODO: Move to add/<full path>...
-ADD ./add/ngrok-run.sh /etc/service/ngrok/run
+ADD ./add/etc/service/ngrok/ngrok-run.sh /etc/service/ngrok/run
 RUN chmod +x /etc/service/ngrok/run
 
 RUN groupadd -r ngrok && useradd -rm -g ngrok ngrok
 WORKDIR /home/ngrok
 
-# TODO: Move to add/<full path>...
-ADD ngrok.yml /home/ngrok/.ngrok2/
+ADD ./add/home/ngrok/.ngrok2/ngrok.yml /home/ngrok/.ngrok2/
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
