@@ -9,9 +9,9 @@ RUN dpkg -i /unzip.deb && rm -f /unzip.deb
 ADD https://dl.ngrok.com/ngrok_2.0.19_linux_amd64.zip /ngrok.zip
 RUN unzip -o ngrok.zip -d /bin && false || rm -f ngrok.zip
 
-RUN mkdir /etc/service/ngrok
+RUN mkdir -p /etc/service/ngrok
 
-ADD ./add/etc/service/ngrok/ngrok-run.sh /etc/service/ngrok/run
+ADD ./add/etc/service/ngrok/run /etc/service/ngrok/run
 RUN chmod +x /etc/service/ngrok/run
 
 RUN groupadd -r ngrok && useradd -rm -g ngrok ngrok
