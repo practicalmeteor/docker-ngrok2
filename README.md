@@ -1,3 +1,10 @@
 # docker-ngrok2
 
-TODO: Update instructions on building and running.
+Building:
+```
+./host/bin/docker-build.sh
+```
+Running:
+```
+./host/bin/docker-run.sh
+```

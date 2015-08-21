@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Override ngrok.yml with home ngrok
-cp ~/.ngrok2/ngrok.yml .
+cp ~/.ngrok2/ngrok.yml ./add/home/ngrok/.ngrok2/
 if [ $? -eq 0 ]; then
     echo Using ngrok.yml from ~/.ngrok2/
 else
