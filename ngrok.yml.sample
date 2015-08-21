@@ -1,0 +1,8 @@
+authtoken: yourNgrokAuthtoken
+tunnels:
+  meteor:
+    proto: http
+    addr: 3000
+    bind_tls: true
+    subdomain: yourNgrokSubdomain
+
