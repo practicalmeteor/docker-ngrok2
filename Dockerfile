@@ -15,7 +15,6 @@ ADD ./add/etc/service/ngrok/run /etc/service/ngrok/run
 RUN chmod +x /etc/service/ngrok/run
 
 RUN groupadd -r ngrok && useradd -rm -g ngrok ngrok
-WORKDIR /home/ngrok
 
 ADD ./add/home/ngrok/.ngrok2/ngrok.yml /home/ngrok/.ngrok2/
 
